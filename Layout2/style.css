@@ -8,7 +8,7 @@ body {
 
 #container {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(5, 1fr);
   max-width: 100vw;
   height: 100vh;
@@ -31,7 +31,7 @@ footer {
 
 header {
   background-color: darkgray;
-  grid-column: 1;
+  grid-column: 1 / 3;
   grid-row: 1;
 }
 
@@ -40,7 +40,7 @@ nav {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 10px;
   background-color: darkblue;
-  grid-column: 1;
+  grid-column: 1 / 3;
   grid-row: 2;
   padding: 20px;
 }
@@ -53,14 +53,14 @@ nav div {
 
 section {
   background-color: darkgoldenrod;
-  grid-column: 1;
+  grid-column: 1 / 3;
   grid-row: 3;
   padding: 150px;
 }
 
 article {
   background-color: darkgreen;
-  grid-column: 1;
+  grid-column: 1 / 3;
   grid-row: 4;
   padding: 20px;
   display: grid;
@@ -77,6 +77,6 @@ article div {
 }
 footer {
   background-color: darkred;
-  grid-column: 1;
+  grid-column: 1 / 3;
   grid-row: 5;
 }
