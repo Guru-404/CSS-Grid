@@ -2,6 +2,7 @@ body {
   color: white;
   text-align: center;
   font-weight: bold;
+  font-size: 20px;
   margin: 0;
 }
 
@@ -23,9 +24,8 @@ body {
     "blog3 blog3 blog3 blog3 banner1 banner2"
     "blog3 blog3 blog3 blog3 social social"
     "footer footer footer footer footer footer";
-  grid-gap: 15px;
+  /* grid-gap: 15px; */
   max-width: 100vw;
-  margin: 0 auto;
 }
 
 header,
@@ -33,55 +33,70 @@ nav,
 aside,
 article,
 footer {
-  border: 1px solid black;
   padding: 25px;
-  background-color: darkgrey;
+}
+
+aside,
+article {
+  border: 1px solid black;
 }
 
 header {
   grid-area: header;
+  background-color: black;
 }
 
 nav {
   grid-area: nav;
+  background-color: lightslategray;
 }
 
 #blog1 {
   grid-area: blog1;
+  background-color: pink;
 }
 
 #blog2 {
   grid-area: blog2;
+  background-color: violet;
 }
 
 #blog3 {
   grid-area: blog3;
+  background-color: magenta;
 }
 
 #signup {
   grid-area: signup;
+  background-color: greenyellow;
 }
 
 #feature {
   grid-area: feature;
+  background-color: lightgreen;
 }
 
 #bio {
   grid-area: bio;
+  background-color: green;
 }
 
 #banner1 {
   grid-area: banner1;
+  background-color: greenyellow;
 }
 
 #banner2 {
   grid-area: banner2;
+  background-color: yellowgreen;
 }
 
 #social {
   grid-area: social;
+  background-color: lightgreen;
 }
 
 footer {
   grid-area: footer;
+  background-color: black;
 }
