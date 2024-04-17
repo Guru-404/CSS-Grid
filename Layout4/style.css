@@ -8,20 +8,20 @@ body {
 
 #container {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  /* grid-template-columns: repeat(3, 1fr); */
   grid-auto-rows: minmax(75px, auto);
   grid-template-areas:
-    "header header header header header header header header"
-    "nav nav nav nav nav nav nav nav"
-    "feature feature feature gallery gallery gallery gallery gallery"
-    "feature feature feature gallery gallery gallery gallery gallery"
-    "feature feature feature gallery gallery gallery gallery gallery"
-    "feature feature feature gallery gallery gallery gallery gallery"
-    "new new new blog blog blog blog blog"
-    "new new new blog blog blog blog blog"
-    "category category category blog blog blog blog blog"
-    "category category category blog blog blog blog blog"
-    "footer footer footer footer footer footer footer footer";
+    "header header header"
+    "nav nav nav"
+    "feature gallery gallery"
+    "feature gallery gallery"
+    "feature gallery gallery"
+    "feature gallery gallery"
+    "new blog blog"
+    "new blog blog"
+    "category blog blog"
+    "category blog blog"
+    "footer footer footer";
   /* grid-gap: 15px; */
   width: 100vw;
   min-height: 100vh;
@@ -35,7 +35,6 @@ article,
 footer {
   /* border: 1px solid black; */
   padding: 25px;
-  /* background-color: darkgrey; */
 }
 
 header {
