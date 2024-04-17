@@ -1,12 +1,9 @@
-* {
-  font-family: Verdana;
+body {
+  background-color: #f5f5f5;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-html {
-  background-color: #f5f5f5;
+  font-family: Verdana;
 }
 
 .wrapper {
@@ -46,6 +43,7 @@ header h1 {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
   padding: 15px;
+  background-color: gray;
 }
 
 #header-menu div,
@@ -63,8 +61,9 @@ header h1 {
   font-weight: bold;
 }
 
-#header-menu div:hover {
-  background-color: #757575;
+#header-menu div:hover,
+#footer-menu div:hover {
+  background-color: rgb(57, 56, 56);
 }
 
 article {
@@ -143,7 +142,4 @@ footer p {
   justify-content: space-around;
   grid-gap: 10px;
   padding: 15px;
-}
-#footer-menu div:hover {
-  background-color: rgb(57, 56, 56);
 }
